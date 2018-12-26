@@ -1,8 +1,14 @@
 #include <stdio.h>
 
 /*
+Author: Madai Arteaga
+email: madai.arteaga@epn.edu.ec
+
 This program recognize how many new lines, tabs, and blank spaces are typed in a text
 until the EOF character (Crtl + Z) are pressed.
+Excercise 1-8. Write a program to count blanks, tabs, and newlines.
+
+STATUS: Finished.
 */
 
 int main(){

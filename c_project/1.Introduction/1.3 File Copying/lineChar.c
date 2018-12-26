@@ -1,6 +1,13 @@
 #include <stdio.h>
 
-//This program allow count how many words are typed.
+/*
+Author: Madai Arteaga
+email: madai.arteaga@epn.edu.ec
+
+This program allow count how many words are typed.
+
+Status: Finished
+*/
 
 int main(){
     int c, nl;

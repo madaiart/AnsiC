@@ -1,8 +1,14 @@
 #include <stdio.h>
 
+
 /*
+Author: Madai Arteaga
+email: madai.arteaga@epn.edu.ec
+
 Excercise 1-9. Write a program to copy its inptu to its output, replacing
 each string of one or more blancks by a single blank
+
+Status: Finished
 */
 
 int main(){
