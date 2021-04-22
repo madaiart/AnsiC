@@ -1,4 +1,5 @@
 # Makefile crated by Madai Arteaga November 09, 2019
+# ONLY VALID ON LINUX
 #
 # This file reads current directory and compile all files.
 # This makefile only works for files without headers or dependent files
