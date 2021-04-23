@@ -8,8 +8,13 @@
 */ 
 
 // TODO importar librerias
-
+#include <stdio.h>  
 // TODO escribir función main
+int main(int argc, char const *argv[])
+{
+   printf("HELLO WORLD");
+   return 0;
+}
 
 
 /* Ejercicio 1-2
@@ -18,3 +23,4 @@
  */
 
  //-->Comentar código anterior y escribr nuevo código aquí.
+
