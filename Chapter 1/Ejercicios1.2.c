@@ -41,6 +41,26 @@
     }
 }
 */ 
+#include <stdio.h>
+
+  int main()
+{
+    int fahr, celsius;
+    int minimo, maximo, salto;
+
+    minimo = 0; // valor mínimo de la escala de temperatura
+    maximo = 300; // valor máximo de la escala de temperatura
+    salto = 20;  // tamaño del salto
+
+    fahr = minimo;
+      printf("F\t  C\n");
+    while (fahr <= maximo){
+        celsius = 5 * (fahr-32)/9;
+        printf("%d\t%d\n", fahr, celsius);
+        fahr = fahr + salto;
+    }
+    return 0;
+}
 
 
 
