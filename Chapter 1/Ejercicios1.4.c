@@ -1,5 +1,5 @@
 /* This are the exercise in the section:
-   1.3 Symbolic Constants
+   1.4 Symbolic Constants
 
    #define NAME VALUE
 */
