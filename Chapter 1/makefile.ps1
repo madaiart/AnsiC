@@ -8,6 +8,11 @@
 # ##########
 # Variables
 #
+param(
+    [bool]$a = $false,
+    [string]$name
+)
+
 $SrcPath = Get-Location
 $BuildPath = Join-Path -Path $SrcPath -ChildPath "builds"
 
@@ -19,16 +24,24 @@ if (!(Test-Path $BuildPath)) {
 # Find .C items
 $CFiles =  Get-ChildItem *.c
 
-# $SrcPath
-# $BuildPath
-# $CFiles
+# Compile all element
+if ($a) {
+    foreach ($item in $CFiles) {
+        $file = Join-Path -Path $BuildPath -ChildPath $item.Name
+        $file = $file.Substring(0, $file.Length -2) + ".exe"
+    
+        Write-Output "Compilando archivo: $($item.Name)" 
+        gcc -o $file $item.Name 
+    }    
+}
 
+if ($name -ne "" -and $name.Substring($name.Length -2) -eq ".c"){
+    $salida = Join-Path -Path $BuildPath -ChildPath $name
+    $salida = $salida.Substring(0, $salida.Length -2) + ".exe"
 
-# Compile each element
-foreach ($item in $CFiles) {
-    $file = Join-Path -Path $BuildPath -ChildPath $item.Name
-    $file = $file.Substring(0, $file.Length -2) + ".exe"
-
-    Write-Output "Compilando archivo: $($item.Name)" 
-    gcc -o $file $item.Name 
+    Write-Output "***Compilando archivo $name`n"
+    gcc -o $salida $name
+    Set-Location $BuildPath    
+    &$salida
+    Set-Location $SrcPath
 }
