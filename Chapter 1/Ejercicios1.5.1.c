@@ -37,7 +37,18 @@ int main()
    Escribir usando printf el resultado de la expression getchar() != EOF
 */
 
+// int main()
+// {
+//     int c= getchar();
+//     printf("%d", c!=EOF);
+
+// }
+
 
 /*  Ejercicio 1-7
     Escribir un programa que imprima el valor de EOF
 */
+// int main()
+// {
+// printf("%d",EOF);
+// }
