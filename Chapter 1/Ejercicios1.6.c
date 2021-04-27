@@ -38,10 +38,22 @@ int main()
    pepas:   $$$$$
 
 */
+// #include <stdio.h>
+// int main()
+// {
+//   int c;
 
-
-
-
+//   while((c =getchar()) != EOF)
+//   {
+//     if( c == ' ' || c == '\n')
+//     {
+//         printf("\n");
+//     }
+//     else
+//       putchar('$');
+//   }
+//   return 0;
+// }
 /* Ejercicio 1-14
     Escribir un programa para imprimir el histograma de frequencias
     de cada uno de las letras de entrada. 
